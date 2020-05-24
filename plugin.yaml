@@ -1,0 +1,24 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: hello-cloudnative 
+spec:
+  version: "v1.0.0"
+  homepage: https://github.com/kgamanji/kubectl-hello-cloudnative 
+  shortDescription: "Promt hello cloudnative message"
+  description: |
+     Promts hello cloudnative message
+  platforms:
+  - selector:
+      matchExpressions:
+      - key: "os"
+        operator: "In"
+        values:
+        - darwin
+        - linux
+    uri: https://github.com/kgamanji/kubectl-hello-cloudnative/archive/v1.0.1.zip 
+    sha256: 868d0e41d4bf2fa3ece872e189f7ffdd0def0c7ec5ab4ba75af7230e7c53b2cc 
+    files:
+    - from: "kubectl-hello-cloudnative-*/*"
+      to: "."
+    bin: hello-cloudnative.sh 
