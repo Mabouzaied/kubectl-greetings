@@ -1,11 +1,11 @@
 apiVersion: krew.googlecontainertools.github.com/v1alpha2
 kind: Plugin
 metadata:
-  name: hello-greetings
+  name: greetings
 spec:
   version: "v1.0.0"
   homepage: https://github.com/kgamanji/kubectl-greetings
-  shortDescription: "Promt hello cloudnative message"
+  shortDescription: "Promt greetings message"
   description: |
      Promts greeting message
   platforms:
@@ -16,9 +16,9 @@ spec:
         values:
         - darwin
         - linux
-    uri: https://github.com/kgamanji/kubectl-greetings/archive/v1.0.1.zip 
-    sha256: 868d0e41d4bf2fa3ece872e189f7ffdd0def0c7ec5ab4ba75af7230e7c53b2cc 
+    uri: https://github.com/kgamanji/kubectl-greetings/archive/v2.0.0.zip 
+    sha256: 011e3ea52ed321527dde5a2201bbfe50452024ac3107972b9e15286899b5da3c 
     files:
     - from: "kubectl-greetings-*/*"
       to: "."
-    bin: hello-greetings.sh 
+    bin: greetings.sh 
