@@ -3,7 +3,7 @@ kind: Plugin
 metadata:
   name: greetings
 spec:
-  version: "v1.0.0"
+  version: "v1.0.1"
   homepage: https://github.com/kgamanji/kubectl-greetings
   shortDescription: "Promt greetings message"
   description: |
@@ -16,8 +16,8 @@ spec:
         values:
         - darwin
         - linux
-    uri: https://github.com/kgamanji/kubectl-greetings/archive/v2.0.0.zip 
-    sha256: 011e3ea52ed321527dde5a2201bbfe50452024ac3107972b9e15286899b5da3c 
+    uri: https://github.com/kgamanji/kubectl-greetings/archive/v2.2.0.zip
+    sha256: f6592862e6477faaf591f813c207e34339533503d98c4de82387ca4cd219ff7d 
     files:
     - from: "kubectl-greetings-*/*"
       to: "."
