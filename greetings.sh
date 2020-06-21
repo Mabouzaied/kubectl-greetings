@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Hello Cloud Native eParty!"
+echo "Hello Cloud Native!"
